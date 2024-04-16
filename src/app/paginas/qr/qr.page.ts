@@ -2,13 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import html2canvas from 'html2canvas';
 import { Filesystem, Directory, Encoding } from '@capacitor/filesystem';
 import { Share } from '@capacitor/share';
-import {
-  AlertController,
-  LoadingController,
-  ModalController,
-  Platform,
-  ToastController,
-} from '@ionic/angular';
+import { AlertController, LoadingController, ModalController, Platform, ToastController} from '@ionic/angular';
 import { BarcodeScanningModalComponent } from './barcode-scanning-modal.component';
 import { LensFacing, BarcodeScanner } from '@capacitor-mlkit/barcode-scanning';
 import { FilePicker } from '@capawesome/capacitor-file-picker';
