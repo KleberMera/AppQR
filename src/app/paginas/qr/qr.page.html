@@ -6,17 +6,24 @@
 
 <ion-content class="ion-padding ion-text-center">
 
-  <ion-segment [(ngModel)]="segment">
-    <ion-segment-button value="scan">
-      <ion-label>Scaner QR</ion-label>
+  <ion-card color="tertiary">
+    <ion-segment-button >
+      <ion-label class="select"> Selecciona lo que desee hacer</ion-label>
     </ion-segment-button>
+    <ion-segment [(ngModel)]="segment" color="primary">
+      <ion-segment-button value="scan">
+        <ion-label>Scaner QR</ion-label>
+      </ion-segment-button>
+  
+      <ion-segment-button value="generate">
+        <ion-label>Generar QR</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-card>
 
-    <ion-segment-button value="generate">
-      <ion-label>Generar QR</ion-label>
-    </ion-segment-button>
-  </ion-segment>
+  
 
-  <div class="segment" *ngIf="segment == 'scan'">
+  <div class="segment" *ngIf="segment == 'scan'" >
     <!---- if segment is igual a scan-->
     <div class="segment-content">
       <img src="assets/img/scan-qr.webp" alt="">
