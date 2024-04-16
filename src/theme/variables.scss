@@ -1,7 +1,3 @@
-// Ionic Variables and Theming. For more info, please see:
-// http://ionicframework.com/docs/theming/
-
-/** Ionic CSS Variables **/
 :root {
   /** primary **/
   --ion-color-primary: #3880ff;
@@ -76,37 +72,27 @@
   --ion-color-light-tint: #f5f6f9;
 }
 
-
-
-body.barcode-scanning-active{
+body.barcode-scanning-active {
   visibility: hidden;
   --background: transparent;
   --ion-background-color: transparent;
 }
 
-.barcode-scanning-modal{
+.barcode-scanning-modal {
   visibility: visible;
-
 }
 
-
-@media(prefers-color-scheme: dark) {
-  .barcode-scanning-active{
+@media (prefers-color-scheme: dark) {
+  .barcode-scanning-active {
     visibility: hidden;
     --background: transparent;
     --ion-background-color: transparent;
   }
 
-  .barcode-scanning-modal{
+  .barcode-scanning-modal {
     visibility: visible;
-  
   }
-  
 }
 html {
-  /* 
-   * For more information on dynamic font scaling, visit the documentation:
-   * https://ionicframework.com/docs/layout/dynamic-font-scaling
-   */
   --ion-dynamic-font: var(--ion-default-dynamic-font);
 }
